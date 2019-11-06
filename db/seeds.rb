@@ -1,5 +1,6 @@
 puts 'Deleting previous fake restaurants'
-Restaurant.delete_all
+Restaurant.destroy_all
+# Review.destroy_all
 puts 'Generating 10 fake restaurants...'
 10.times do |i|
   restaurant = Restaurant.create!(
